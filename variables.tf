@@ -11,8 +11,6 @@ variable "instance_type" {
   
 }
 
-
-
 variable "inboundports" {
   type        = list(number)
   description = "Ports which are part of Inbound rules for SG"
