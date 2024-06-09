@@ -10,5 +10,5 @@ data "aws_ami" "ami_id" {
 
 output "ami_id" {
   description = "Latest available AMI ID"
-  value = data.aws_ami.ami_id.image_id
+  value       = data.aws_ami.ami_id.image_id
 }

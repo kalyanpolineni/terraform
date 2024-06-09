@@ -14,4 +14,6 @@ terraform {
 }
 
 #Configure Provider Block
-provider "aws" {}
+provider "aws" {
+  region = "ap-south-1"
+}
