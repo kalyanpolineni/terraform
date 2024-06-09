@@ -8,7 +8,6 @@ variable "ami_owner" {
 
 variable "instance_type" {
   default = "t2.micro"
-  
 }
 
 variable "inboundports" {
@@ -18,7 +17,7 @@ variable "inboundports" {
 }
 
 variable "outbountports" {
-  type = list(number)
+  type        = list(number)
   description = "Ports which are part of Outbound rules for SG"
-  default = [0]
+  default     = [0]
 }

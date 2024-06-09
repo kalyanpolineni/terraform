@@ -47,12 +47,12 @@ resource "aws_security_group" "mysg" {
 }
 
 resource "aws_instance" "demo" {
-  ami = data.aws_ami.ami_id.image_id
-  instance_type = var.instance_type
-  key_name = "linuxkey"
-  security_groups = [ aws_security_group.mysg.name ]
+  ami             = data.aws_ami.ami_id.image_id
+  instance_type   = var.instance_type
+  key_name        = "linuxkey"
+  security_groups = [aws_security_group.mysg.name]
   tags = {
-    Name = "demoserver"
+    Name        = "demoserver"
     description = "This instance is created as part of Terraform learning"
   }
 }
